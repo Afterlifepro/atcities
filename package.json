@@ -1,0 +1,41 @@
+{
+  "name": "v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "COMPATIBILITY_DATE=2024-11-10 vinxi dev --host",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "lexgen": "lex gen-server ./app/lexicon ./lexicons/*",
+    "db:push": "drizzle-kit push"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@atproto/api": "^0.13.19",
+    "@atproto/identity": "^0.4.3",
+    "@atproto/lexicon": "^0.4.3",
+    "@atproto/oauth-client-node": "^0.2.3",
+    "@libsql/client": "^0.14.0",
+    "@oslojs/encoding": "^1.1.0",
+    "@tanstack/react-form": "^0.34.4",
+    "@tanstack/react-router": "^1.86.1",
+    "@tanstack/start": "^1.86.1",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.36.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "vinxi": "^0.4.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "drizzle-kit": "^0.28.1",
+    "typescript": "^5.7.2",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
